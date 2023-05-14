@@ -1,5 +1,5 @@
-from django.http import HttpResponse
+from django.shortcuts import render
 
 
 def index(request):
-    return HttpResponse("<h1>Hello</h1>")
+    return render(request, "fight_calendar_x/index.html")
