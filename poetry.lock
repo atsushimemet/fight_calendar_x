@@ -297,6 +297,14 @@ argon2 = ["argon2-cffi (>=19.1.0)"]
 bcrypt = ["bcrypt"]
 
 [[package]]
+name = "et-xmlfile"
+version = "1.1.0"
+description = "An implementation of lxml.xmlfile for the standard library"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
 name = "executing"
 version = "1.2.0"
 description = "Get the currently executing AST node of a frame, and other information"
@@ -969,6 +977,17 @@ optional = false
 python-versions = ">=3.8"
 
 [[package]]
+name = "openpyxl"
+version = "3.1.2"
+description = "A Python library to read/write Excel 2010 xlsx/xlsm files"
+category = "main"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+et-xmlfile = "*"
+
+[[package]]
 name = "packaging"
 version = "23.1"
 description = "Core utilities for Python packages"
@@ -1504,7 +1523,7 @@ test = ["mypy", "pre-commit", "pytest", "pytest-asyncio", "websockets (>=10.0)"]
 [metadata]
 lock-version = "1.1"
 python-versions = "^3.10"
-content-hash = "a957e1ac0d689dacf6ef76152d3dfcd2925b12e2ccae0d2f6b5f74d40a82083a"
+content-hash = "a395bfb1d08d4068401882c1b0e2458b7fda1bb07ba4d8dfa7ae1b0b1d0d66db"
 
 [metadata.files]
 aiofiles = []
@@ -1637,6 +1656,7 @@ defusedxml = [
     {file = "defusedxml-0.7.1.tar.gz", hash = "sha256:1bb3032db185915b62d7c6209c5a8792be6a32ab2fedacc84e01b52c51aa3e69"},
 ]
 django = []
+et-xmlfile = []
 executing = []
 fastjsonschema = []
 flake8 = []
@@ -1687,6 +1707,7 @@ nest-asyncio = []
 notebook = []
 notebook-shim = []
 numpy = []
+openpyxl = []
 packaging = []
 pandas = []
 pandocfilters = [
